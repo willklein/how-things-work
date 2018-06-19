@@ -9,10 +9,14 @@ import {
   Heading,
   ListItem,
   List,
+  MarkdownSlides,
   Quote,
   Slide,
   Text,
 } from 'spectacle';
+
+// eslint-disable-next-line
+import slides from '!raw-loader!./slides.md';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -41,6 +45,7 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
+        {MarkdownSlides(slides)}
         <Slide transition={['zoom']} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Spectacle Boilerplate
