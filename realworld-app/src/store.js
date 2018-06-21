@@ -13,7 +13,7 @@ export const history = createHistory();
 const myRouterMiddleware = routerMiddleware(history);
 
 const getMiddleware = () => {
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production') { // eslint-disable-line no-undef
     return applyMiddleware(myRouterMiddleware, promiseMiddleware, localStorageMiddleware);
   } else {
     // Enable additional logging in non-production environments.
