@@ -1,3 +1,0 @@
-[submodule "realworld-app"]
-	path = realworld-app
-	url = https://github.com/willklein/react-redux-realworld-example-app.git
