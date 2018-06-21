@@ -12,25 +12,31 @@ var rule = require("../../../lib/rules/no-it-should"),
 
     RuleTester = require("eslint").RuleTester;
 
-
+const parserOptions = {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+        jsx: true
+    }
+    };
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
 
-var ruleTester = new RuleTester();
+var ruleTester = new RuleTester({ parserOptions });
 ruleTester.run("no-it-should", rule, {
 
     valid: [
 
         // give me some code that won't trigger a warning
-        // "it('does a thing', () => {})"
+        "it('does a thing', () => {})"
     ],
 
     invalid: [
         {
             code: "it('should do a thing')",
             errors: [{
-                message: "We found an it!",
+                message: "Don't use it('should do ...'), use it('does ...')",
                 type: "CallExpression"
             }]
         }

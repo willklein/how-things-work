@@ -39,10 +39,13 @@ module.exports = {
 
             // give me methods
             "CallExpression": function(node) {
-                if (node.callee.name === 'it') {
+                var calleeNameIsIt = node.callee.name === 'it';
+                var startsWithShould = node.arguments[0].value.startsWith('should');
+
+                if (calleeNameIsIt && startsWithShould) {
                     context.report({
                         node: node,
-                        message: "We found an {{identifier}}!",
+                        message: "Don't use it('should do ...'), use it('does ...')",
                         data: {
                             identifier: node.callee.name
                         }
