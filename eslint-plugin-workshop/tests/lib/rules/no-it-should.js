@@ -23,15 +23,15 @@ ruleTester.run("no-it-should", rule, {
     valid: [
 
         // give me some code that won't trigger a warning
-        "it('does a thing', () => {})"
+        // "it('does a thing', () => {})"
     ],
 
     invalid: [
         {
-            code: "it('should do a thing', () => {})",
+            code: "it('should do a thing')",
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: "We found an it!",
+                type: "CallExpression"
             }]
         }
     ]

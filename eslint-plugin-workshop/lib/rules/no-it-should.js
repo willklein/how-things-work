@@ -38,7 +38,17 @@ module.exports = {
         return {
 
             // give me methods
-
+            "CallExpression": function(node) {
+                if (node.callee.name === 'it') {
+                    context.report({
+                        node: node,
+                        message: "We found an {{identifier}}!",
+                        data: {
+                            identifier: node.callee.name
+                        }
+                    });
+                }
+            }
         };
     }
 };
