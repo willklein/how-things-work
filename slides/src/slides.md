@@ -127,10 +127,12 @@ Placeholder: I'm going on an adventure
 
 ---
 
-# The Project
+## Exercise!
+![dino exercise](fun/jump.webp)
+
 ---
 
-## Quick Exercise
+# Run an App
 
 ---
 
@@ -154,19 +156,20 @@ or
 
 ---
 
-## Exercise
-Placeholder: exercise gif
+## Exercise!
+![dino exercise](fun/climb.gif)
 
 ---
 
 # Install ESLint
 
 ---
+`npm install eslint@next --save-dev`
 
-### Exercise
+---
 
-Install ESLint
-> npm install eslint@next --save-dev
+## Exercise!
+![dino exercise](fun/bar.gif)
 
 ---
 
@@ -174,10 +177,8 @@ Install ESLint
 
 ---
 
-### Exercise
-
 Setup ESLint
-> npx eslint --init
+`npx eslint --init`
 
 ---
 
@@ -188,25 +189,22 @@ https://eslint.org/docs/rules/
 
 ---
 
-# Add a Shared Config
+## Exercise!
+![dino exercise](fun/climb.gif)
 
 ---
 
-### Exercise
-
-Search NPM for a config and set one up
-https://www.npmjs.com/search?q=eslint-config&ranking=popularity
-
----
-
-# Add an ESLint Plugin
+Search NPM: https://www.npmjs.com/  
+for: `eslint-config`   
+& `eslint-plugin`
 
 ---
 
-### Exercise
+# Remember that React plugin?
 
-Search NPM for a plugin and set one up
-https://www.npmjs.com/search?q=eslint-plugin
+---
+
+# But how???
 
 ---
 
@@ -242,23 +240,11 @@ var answer = 6 * 7;
 
 ---
 
-# Magical Tree
+# ...
 
 ---
 
-## Abstract...
-
----
-
-## Syntax...
-
----
-
-## Tree!
-
----
-
-# Abstract Syntax Tree
+# Abstract Syntax Tree!!!
 
 ---
 
@@ -274,6 +260,63 @@ http://astexplorer.net/
 # Linters
 
 ---
+
+## load configuration & rules
+
+---
+
+## iterate through files
+
+---
+
+## parse each file (Program)
+
+---
+
+## walk the syntax tree
+
+---
+
+## apply matching rules
+
+---
+
+## report on rule breakers
+
+---
+
+## (optional) fix what's broken
+
+---
+
+
+1. load configuration & rules
+- iterate through files
+- parse each file (Program)
+- walk the syntax tree
+- apply matching rules
+- report on rule breakers
+- (optional) fix what's 
+
+---
+
+# Look at an Example
+
+---
+
+https://github.com/eslint/eslint/blob/master/lib/rules/no-nested-ternary.js
+
+---
+
+## Break!
+
+---
+
+## Exercise!
+![dino exercise](fun/soccer.gif)
+
+---
+
 
 # Write an ESLint Rule
 
