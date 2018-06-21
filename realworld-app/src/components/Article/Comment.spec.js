@@ -30,7 +30,7 @@ describe('<Comment/>', () => {
     expect(getByTestId('comment-author-img').getAttribute('src')).toBe('rex-selfie.jpg')
   })
 
-  it('should have the comment text', () => {
+  it('has the comment text', () => {
     const { getByTestId } = render(
       <Comment comment={comment} />
     )
@@ -38,7 +38,7 @@ describe('<Comment/>', () => {
     expect(getByTestId('comment')).toHaveTextContent('RARRR')
   })
 
-  it('should have the comment text', () => {
+  it('has the comment text', () => {
     const { getByText } = render(
       <Comment comment={comment} />
     )

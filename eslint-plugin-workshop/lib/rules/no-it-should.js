@@ -40,7 +40,11 @@ module.exports = {
             // give me methods
             "CallExpression": function(node) {
                 var calleeNameIsIt = node.callee.name === 'it';
-                var startsWithShould = node.arguments[0].value.startsWith('should');
+                var startsWithShould = (
+                        node.arguments.length &&
+                        typeof node.arguments[0].value === 'string' &&
+                        node.arguments[0].value.startsWith('should')
+                );
 
                 if (calleeNameIsIt && startsWithShould) {
                     context.report({
