@@ -10,11 +10,8 @@ import {
 // eslint-disable-next-line
 import slides from '!raw-loader!./slides.md';
 
-import dino from './fun/dino.gif';
-
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
-import { Fit } from 'spectacle/lib/components/fit';
 
 // Require CSS
 require('normalize.css');
