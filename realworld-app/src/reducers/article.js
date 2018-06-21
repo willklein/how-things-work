@@ -24,10 +24,9 @@ export default (state = {}, action) => {
           (state.comments || []).concat([action.payload.comment])
       };
     case DELETE_COMMENT:
-      const commentId = action.commentId
       return {
         ...state,
-        comments: state.comments.filter(comment => comment.id !== commentId)
+        comments: state.comments.filter(comment => comment.id !== action.commentId)
       };
     default:
       return state;
