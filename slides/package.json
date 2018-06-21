@@ -2,7 +2,7 @@
   "name": "how-things-work",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://willklein.github.io/how-things-work",
+  "homepage": "http://willslab.netlify.com",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "raw-loader": "^0.5.1",
