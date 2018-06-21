@@ -14,10 +14,13 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "workshop"
     ],
     "rules": {
         "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error"
+        "react/jsx-uses-vars": "error",
+
+        "workshop/no-it-should": "error"
     }
 };
