@@ -2,9 +2,9 @@
 
 > Your guide to super awesome JavaScript stuff
 
-This is a workshop given at DinosaurJS. I'd like to give it again, it was really awesome.
+This is a workshop given at DinosaurJS. I'd like to give it again, it was really awesome. It takes about three hours in-person, and brings someone from zero to hero on linting rules and code transformation.
 
-If you're interested in doing this workshop (online or in person), reply on this Tweet or contact me howerver you can: https://twitter.com/WillsLab/status/1010238287385169921
+If you're interested in doing this workshop (online or in person), reply on this Tweet or contact me however you can: https://twitter.com/WillsLab/status/1010238287385169921
 
 Resources in rough order:
 - http://astexplorer.net/
