@@ -27,15 +27,17 @@
 
 ---
 
-Placeholder: react denver
+![React Denver](fun/react-denver.png)
 
 ---
 
-Placeholder: thumbnail conference talks
+![conference talk](fun/scaling.png)
+![conference talk](fun/scaling3.png)
+![conference talk](fun/e2e.png)
 
 ---
 
-Developers! Developers! Developers!!!
+![Developers](fun/developers.gif)
 
 ---
 
@@ -47,15 +49,17 @@ Developers! Developers! Developers!!!
 
 ---
 
-Placeholder: i have no idea what i'm doing meme
+
+![what am i doing](fun/no-idea.webp)
 
 ---
 
-Placeholder: oh i get it/nodding kid at computer meme
+
+![gets it](fun/gets-it.webp)
 
 ---
 
-Placeholder: cat on unicorn lazers  
+![unicorn](fun/unicorn.jpg)
 Follow me, and become a unicorn!
 
 ---
@@ -117,23 +121,7 @@ https://code.visualstudio.com
 
 ---
 
-#### Along the way, unlock secret knowledge
-
----
-
-# Compilers
-
----
-
-# Linters
-
----
-
-# Compilers Again!
-
----
-
-Placeholder: I'm going on an adventure
+![adventure](fun/adventure.webp)
 
 ---
 
@@ -166,6 +154,10 @@ or
 
 ---
 
+# Let's Look at an Example
+
+---
+
 ## Exercise!
 ![dino exercise](fun/climb.gif)
 
@@ -174,7 +166,10 @@ or
 # Install ESLint
 
 ---
-`npm install eslint@next --save-dev`
+
+`yarn add eslint`  
+or  
+`npm install eslint --save-dev`
 
 ---
 
@@ -187,7 +182,6 @@ or
 
 ---
 
-Setup ESLint
 `npx eslint --init`
 
 ---
@@ -196,17 +190,6 @@ Setup ESLint
 
 Checked rules enabled:
 https://eslint.org/docs/rules/
-
----
-
-## Exercise!
-![dino exercise](fun/climb.gif)
-
----
-
-Search NPM: https://www.npmjs.com/  
-for: `eslint-config`   
-& `eslint-plugin`
 
 ---
 
@@ -222,6 +205,17 @@ for: `eslint-config`
 - accessbility
 - security
 - DOM APIs
+
+---
+
+## Exercise!
+![dino exercise](fun/climb.gif)
+
+---
+
+Search NPM: https://www.npmjs.com/  
+for: `eslint-config`  
+& `eslint-plugin`
 
 ---
 
@@ -242,6 +236,22 @@ var answer = 6 * 7;
 `
 100011101010111010100011
 `
+
+---
+
+# Stages of a Compiler
+
+---
+
+1. Parsing
+2. Transformation
+3. Code Generation
+
+---
+
+# Parsing
+- Lexical Analysis
+- Syntactic Analysis
 
 ---
 
@@ -268,6 +278,7 @@ var answer = 6 * 7;
 # Abstract Syntax Tree!!!
 
 ---
+## Exercise!
 
 http://astexplorer.net/
 
@@ -278,7 +289,7 @@ http://astexplorer.net/
 
 ---
 
-# Linters
+# How Do Linters Work?
 
 ---
 
@@ -317,11 +328,11 @@ http://astexplorer.net/
 - walk the syntax tree
 - apply matching rules
 - report on rule breakers
-- (optional) fix what's 
+- (optional) fix what's broken
 
 ---
 
-# Look at an Example
+# Let's Look at an Example
 
 ---
 
@@ -338,16 +349,33 @@ https://github.com/eslint/eslint/blob/master/lib/rules/no-nested-ternary.js
 
 ---
 
-
 # Write an ESLint Rule
 
 ---
 
-# Write a Test Case
+https://github.com/eslint/generator-eslint  
+`npm i -g yo`  
+`npm i -g generator-eslint`
 
 ---
 
-# Write a Rule from Scratch
+`yo eslint`
+
+---
+
+1. Identify a problem
+2. Generate a plugin & rule
+3. Create a test case
+4. Implement rule
+5. Profit!
+
+---
+
+
+
+---
+
+# What else could we do?
 
 ---
 
@@ -355,7 +383,7 @@ https://github.com/eslint/eslint/blob/master/lib/rules/no-nested-ternary.js
 
 ---
 
-# Babel
+![Babel](fun/babel.png)
 
 ---
 
@@ -363,7 +391,7 @@ https://github.com/eslint/eslint/blob/master/lib/rules/no-nested-ternary.js
 
 ---
 
-# Setup a Custom Babel Plugin
+https://github.com/babel/babel
 
 ---
 
@@ -395,15 +423,16 @@ https://github.com/facebook/jscodeshift
 
 ---
 
-# Challenge
+# What have we learned?
 
 ---
 
-Pick one:
-- write your OWN linting rule
-- implement a linting rule for xyz
-- write your OWN Babel plugin
-- implement a Babel plugin for xyz
+- how linters work
+- how compilers work
+- how to write an ESLint plugin
+- how to write a Babel plugin
+- ASTs are cool
+- the answer to life, the universe, and everything
 
 ---
 
