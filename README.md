@@ -2,30 +2,31 @@
 
 > Your guide to super awesome JavaScript stuff
 
-## Let the Installs Roll
+This is a workshop given at DinosaurJS. I'd like to give it again, it was really awesome.
 
-Start your downloads!
+If you're interested in doing this workshop (online or in person), reply on this Tweet or contact me howerver you can: https://twitter.com/WillsLab/status/1010238287385169921
 
-### Required: Node/NPM
+Resources in rough order:
+- http://astexplorer.net/
+- https://github.com/eslint/generator-eslint
+- https://github.com/eslint/eslint/blob/master/lib/rules/no-nested-ternary.js
+- https://github.com/babel/babel/blob/master/packages/babel-plugin-transform-shorthand-properties/src/index.js
+- https://github.com/babel/awesome-babel
 
-Use NVM if you have it or https://nodejs.org
+James Kyle's great resources:
+- https://github.com/jamiebuilds/babel-handbook
+- https://the-super-tiny-compiler.glitch.me/traverser
+- https://www.youtube.com/watch?v=ZYFOWesCm_0
 
-Check your versions, try to be Node 8+, NPM 5+. Here's what I'm using:
+Kent C. Dodd's great resources:
+- https://frontendmasters.com/workshops/code-transformation-linting-asts/
+- https://egghead.io/lessons/javascript-introduction-to-abstract-syntax-trees
+- https://egghead.io/lessons/javascript-use-astexplorer-net
+- https://www.youtube.com/watch?v=VBscbcm2Mok
 
-node -v  
-v10.4.1  
-npm -v  
-6.1.0
+My past talks on the subject:
+- https://www.youtube.com/watch?v=uvZTcLbOg8Q
+- https://www.youtube.com/watch?v=7yqx4IJJquM
 
-### Yarn  
-
-`brew install yarn --without-node`  
-https://yarnpkg.com/
-
-### VS Code
-https://code.visualstudio.com
-
-## The Game Plan
-
-OK team, here's our strategy:
-- 
+Demo app: https://github.com/gothinkster/realworld
+Testing utils: https://github.com/kentcdodds/react-testing-library
