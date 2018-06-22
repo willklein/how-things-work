@@ -7,13 +7,23 @@
 
 ---
 
-Placeholder: family picture
+![family](fun/family.jpg)
 
 ---
 
 # I really, really, love this stuff...
 
-Placeholder: dinojs logo, eslint logo, babel logo
+---
+
+![DinosaurJS](fun/dinosaurjs.jpg)
+
+---
+
+![ESLint](fun/eslint.jpg)
+
+---
+
+![Babel](fun/babel.png)
 
 ---
 
@@ -201,6 +211,17 @@ for: `eslint-config`
 ---
 
 # Remember that React plugin?
+
+---
+
+# Plugins for XYZ
+
+---
+
+- any adopted library/framework
+- accessbility
+- security
+- DOM APIs
 
 ---
 
