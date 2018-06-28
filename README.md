@@ -1,6 +1,6 @@
 # how-things-work
 
-> Your guide to super awesome JavaScript stuff
+> Let’s demystify the secrets of modern JavaScript tooling. In this workshop, you will: learn how linters, compilers, and code transforms work, write your own ESLint and Babel plugins, learn when to apply these skills to help your team, and deepen your understanding of computer languages.
 
 This is a workshop given at DinosaurJS. I'd like to give it again, it was really awesome. It takes about three hours in-person, and brings someone from zero to hero on linting rules and code transformation.
 
