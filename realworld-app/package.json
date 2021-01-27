@@ -4,6 +4,8 @@
   "private": true,
   "devDependencies": {
     "cross-env": "^5.1.4",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.9.1",
     "react-scripts": "1.1.1"
   },
   "dependencies": {
@@ -27,6 +29,8 @@
     "start": "cross-env PORT=4100 react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
+    "eslint": "eslint src",
     "eject": "react-scripts eject"
+
   }
 }
