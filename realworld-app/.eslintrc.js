@@ -21,6 +21,7 @@ module.exports = {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
 
-        "workshop/no-it-should": "error"
+        "workshop/no-it-should": "error",
+        "workshop/prefer-it": "error"
     }
 };
