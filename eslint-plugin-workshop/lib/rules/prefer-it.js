@@ -1,6 +1,6 @@
 /**
- * @fileoverview Disallow using it('should ...') wording
- * @author Will Klein
+ * @fileoverview Prefer using 'it' over 'test'
+ * @author Alex Kessock
  */
 "use strict";
 
@@ -11,11 +11,11 @@
 module.exports = {
     meta: {
         docs: {
-            description: "Disallow using it('should ...') wording",
+            description: "Prefer using 'it' over 'test'",
             category: "Fill me in",
             recommended: false
         },
-        fixable: null,  // or "code" or "whitespace"
+        fixable: 'code',  // or "code" or "whitespace"
         schema: [
             // fill in your schema
         ]
@@ -36,26 +36,19 @@ module.exports = {
         //----------------------------------------------------------------------
 
         return {
-
-            // give me methods
-            "CallExpression": function(node) {
-                var calleeNameIsIt = node.callee.name === 'it';
-                var startsWithShould = (
-                        node.arguments.length &&
-                        typeof node.arguments[0].value === 'string' &&
-                        node.arguments[0].value.startsWith('should')
-                );
-
-                if (calleeNameIsIt && startsWithShould) {
+            CallExpression: function(node) {
+                if (node.callee.name === 'test') {
                     context.report({
-                        node: node,
-                        message: "Don't use it('should do ...'), use it('does ...')",
-                        data: {
-                            identifier: node.callee.name
+                        message: 'Use it, not should.',
+                        node,
+                        fix: function(fixer) {
+                            return fixer.replaceText(node.callee, 'it');
                         }
-                    });
+                    })
                 }
             }
+            // give me methods
+
         };
     }
 };
